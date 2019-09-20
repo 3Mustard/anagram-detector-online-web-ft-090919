@@ -10,7 +10,7 @@ class Anagram
     array.each do |word|
       split_word = word.split("")
       if split_word.sort == is_anagram.sort
-        word
+        return word
       else 
         return []
       end 
