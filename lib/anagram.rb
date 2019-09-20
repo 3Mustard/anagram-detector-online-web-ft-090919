@@ -12,7 +12,7 @@ class Anagram
       if split_word.sort == is_anagram.sort
         word
       else 
-        false
+        return []
       end 
     end 
   end 
