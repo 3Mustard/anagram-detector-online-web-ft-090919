@@ -12,10 +12,8 @@ class Anagram
       split_word = word.split("")
       if split_word.sort == is_anagram.sort
         result << word
-        return word
-      else 
-        return []
       end 
     end 
+    result
   end 
 end 
