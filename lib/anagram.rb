@@ -6,11 +6,13 @@ class Anagram
   end 
   
   def match(array)
+    result = []
     is_anagram = @word.split("")
     array.each do |word|
       split_word = word.split("")
       if split_word.sort == is_anagram.sort
-        return word.to_a
+        result << word
+        return word
       else 
         return []
       end 
