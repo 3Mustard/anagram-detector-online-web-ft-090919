@@ -11,9 +11,9 @@ class Anagram
       split_word = word.split("")
       if split_word.sort == is_anagram.sort
         word
+      else 
+        false 
       end 
-    else 
-      false
     end 
   end 
 end 
